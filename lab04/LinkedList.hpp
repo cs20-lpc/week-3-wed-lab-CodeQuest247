@@ -3,6 +3,7 @@
 
 #include "List.hpp"
 #include <iostream>
+#include <string> //added
 using namespace std;
 
 template <typename T>
@@ -41,13 +42,13 @@ class LinkedList : public List<T> {
 
         // insert the given element (argument 2) at
         // the given position (argument 1)
-        virtual void insert(int, const T&) override { }
+        virtual void insert(int, const T&) override; // removed paranthesis
 
         // determine if the list currently empty
         virtual bool isEmpty() const override;
 
         // remove the element at the given position (argument)
-        virtual void remove(int) override { }
+        virtual void remove(int) override; // removed paranthesis
 
         // replace the element at the given position (argument 1) with
         // the value given (argument 2)
